@@ -1,0 +1,10 @@
+This is the final project of a very basic JavaScript course with name: "JavaScript Essentials" by: Lawrence Turton
+
+On this project we will create a simple HTML file with a square and three drop-down menues with diferent values that apply to CSS properties for the square
+
+then we will create .js file that will change the square when the user change the values on the drop-down menues
+	for more explanation in how it works read the code on the file 02-project.js
+
+Edmundo Rubio
+mycode.website
+
