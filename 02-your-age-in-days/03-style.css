@@ -1,0 +1,25 @@
+body{
+    background-color: ivory;
+}
+
+h2{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+
+.inhold{
+    text-align:center;
+    line-height:150%;
+    font-size:.85em;
+}
+
+input {
+    margin: 0px auto;
+    display: block;
+}
+
+
+/*margin:0px auto;
+display:block*/

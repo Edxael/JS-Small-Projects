@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shrink Size</title>
+    <link rel="stylesheet" href="01-shrink.css">
+</head>
+<body>
+    <h2>Image Percent Calculator - JS</h2>
+    <h3>Get the right size</h3>
+    <p>This page will help you to find the right dimentions for your image, <br> when you need to resize to fit on your project.</p>
+
+    <div class="main">
+        <div class="indata">
+            <label for="perc">Percent:</label>
+            <input type="text" name="perc" id="per1" class="in1">
+        </div>
+
+        <br>
+        <table align="center" border="2">
+            <tr>
+                <th>Original</th>
+                <th>-Measure-</th>
+                <th>Percental</th>
+            </tr>
+            <tr>
+                <td><input type="text" id="w1" class="in1"></td>
+                <th>Width</th>
+                <td id="wanser"></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="h1" class="in1"></td>
+                <th>Height</th>
+                <td id="hanser"></td>
+            </tr>
+        </table>
+
+        <br>
+
+        <p>Press Button to calculate size.</p>
+            <input type="button" onclick="calc()" value="calculate">
+        <br>
+
+    </div>
+
+</body>
+<footer>
+    <script type="text/javascript" src="02-shrink.js">
+
+    </script>
+</footer>
+</html>

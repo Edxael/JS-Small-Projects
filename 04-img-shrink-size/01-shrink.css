@@ -1,0 +1,16 @@
+body{
+    background-color: lavender;
+    text-align: center;
+}
+
+table{
+    table-layout: fixed;
+    background-color: lightcyan;
+    width: 400px;
+    height: 100px;
+}
+
+.in1{
+    width:70px;
+    text-align: center;
+}
