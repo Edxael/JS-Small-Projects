@@ -1,0 +1,12 @@
+body{
+    background: aquamarine;
+    text-align: center;
+}
+
+div{
+    border: 2px solid black;
+    background: rgba(0,0,0,0.3);
+    width: 70px;
+    height: 20px;
+    margin: 0px auto;
+}
