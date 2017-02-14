@@ -1,45 +1,8 @@
 body{
-    background-image: url("IMG/wed4.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
-}
-
-#but-p{
-    box-shadow: 2px 3px grey;
-}
-
-
-table {
-    /*align-self: center;*/
-}
-
-.in1{
-    width:450px;
-    /*text-align: center;*/
-}
-/*------------------------------------------------------------*/
-        /*TransBox Configuration*/
-
-div.transbox {
+    background-color: #e6e6ff;
     text-align: center;
-
-  margin-right: 45%;
-  margin-left: 1%;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  height:100vh;
-
-  /*background-color: #ffffff;*/
-  background-color: #e6e6ff;
-  border: 1px solid black;
-  opacity: 0.8;
-  filter: alpha(opacity=60); /* For IE8 and earlier */
 }
 
-div.transbox p {
-  margin-right: 15%;
-  margin-left: 5%;
-  font-weight: bold;
-  color: black;
+#div1{
+    font-size: 20px;
 }
