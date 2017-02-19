@@ -26,18 +26,3 @@ console.log("change Task and Print Modify Array:");
 td_obj.changeTD(1, "Clean Garden");
 td_obj.displayTD();
 console.log("");
-
-
-
-
-// td_obj.addTD(task);
-// td_obj.displayTD();
-// console.log("");
-//
-// td_obj.changeTD(x, upTask);
-// td_obj.displayTD();
-// console.log("");
-//
-// td_obj.deleteTD(a, b);
-// td_obj.displayTD();
-// console.log("");
