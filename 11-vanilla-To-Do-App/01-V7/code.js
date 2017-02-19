@@ -1,5 +1,5 @@
-// Todo App Version 6
-console.log("Todo App Version 5.0");
+// Todo App Version 7
+console.log("Todo App Version 7.0");
 console.log("");
 
     // Ccreating the Object that will store "Data Bae" and "Functions"
