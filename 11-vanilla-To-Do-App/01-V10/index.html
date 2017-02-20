@@ -1,0 +1,57 @@
+<!-- Todo App Version 9 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <h2>To-Do App - Vanilla JavaScript</h2>
+    <p>Version: 9.1 </p>
+    <br>
+
+
+
+    <button onclick="td_obj.displayTD()" class="bu0 bsty" type="button" >Display Tasks</button>
+    <button id="allx" type="number" onclick="td_obj.chanAll()">Complete All</button>
+    <br><br>
+
+    Task to Add: .<input type="text" id="inp1">
+    <button onclick="td_obj.addTD()" class="bu1 bsty" type="button" >Add Task</button>
+    <br><br><br>
+
+
+
+    Position:<input type="number" id="x">
+    New Task:<input type="text" id="y">
+    <button onclick="td_obj.changeTD()" type="button">Change Item</button>
+    <br><br><br>
+
+
+    Task To delete: .<input type="number" id="bye-inp">
+    <button id="bye-but" onclick="td_obj.deleteTD()">Delete</button>
+    <br><br><br>
+
+    Task To Mark as Completed: .<input type="number" id="comp-inp">
+    <button id="comp-but" onclick="td_obj.taskComp()">Done</button>
+    <br><br><br>
+
+
+    <p><strong>My Tod List: </strong></p>
+    <ul id="task-ul">
+
+    </ul>
+
+
+
+
+
+</body>
+<footer>
+    <p>By: Edmundo Rubio <a id="gh-logo" href="https://github.com/Edxael" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></p>
+    <script src="code.js"></script>
+</footer>
+</html>

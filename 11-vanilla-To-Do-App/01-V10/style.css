@@ -1,0 +1,14 @@
+/* Todo App Version 9 */
+
+body{
+    background-color: rgb(155, 233, 229);
+    text-align: center;
+}
+
+#task-ul {
+  list-style-type: none;
+}
+
+.fa-github{
+    color: Black;
+}
