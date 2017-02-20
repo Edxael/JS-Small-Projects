@@ -5,8 +5,24 @@ body{
     text-align: center;
 }
 
-#task-ul {
-  list-style-type: none;
+.myTodoTitle{
+    color: green;
+    text-decoration: line-through;
+}
+
+#task-div-m {
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gral-div-task{
+    display: flex;
+    justify-content: space-between;
+    background-color: grey;
+    width: 60vw;
+    /*text-decoration: line-through; */
 }
 
 .fa-github{
