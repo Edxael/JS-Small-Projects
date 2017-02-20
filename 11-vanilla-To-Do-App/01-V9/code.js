@@ -1,5 +1,5 @@
-// Todo App Version 8
-console.log("Todo App Version 8.3");
+// Todo App Version 9
+console.log("Todo App Version 9.1");
 console.log("");
 
     // Ccreating the Object that will store "Data Bae" and "Functions"
@@ -15,27 +15,18 @@ var td_obj = {
 
         // Will display the Data Base on the Console
     displayTD: function(){
-
         var newTask = document.createElement("li");
         var taskHolder = document.getElementById("task-ul");
-        console.clear();
         document.getElementById("task-ul").innerHTML = "";
 
         if(this.list.length === 0){
-            console.log("The To-Do lIst is empty");
             newTask.innerText = "The To-Do lIst is empty";
             taskHolder.insertBefore(newTask, taskHolder.childNodes[0]);
         }
 
         else{
-            console.log("My Tod List: ");
-            taskHolder.insertBefore(newTask, taskHolder.childNodes[0]);
-
             for(var x = 0; x < this.list.length; x++){
-
                 var mark = (this.list[x].completed === true) ? "(x) " : "( ) ";
-                console.log(mark + this.list[x].task);
-
                 var loopTask = document.createElement("li");
                 loopTask.innerText = mark + this.list[x].task;
                 taskHolder.insertBefore(loopTask, taskHolder.childNodes[0]);
