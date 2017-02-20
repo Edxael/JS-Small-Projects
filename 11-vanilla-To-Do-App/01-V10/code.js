@@ -1,5 +1,5 @@
-// Todo App Version 9
-console.log("Todo App Version 9.1");
+// Todo App Version 10.1
+console.log("Todo App Version 10.1");
 console.log("");
 
     // Ccreating the Object that will store "Data Bae" and "Functions"
@@ -29,6 +29,7 @@ var td_obj = {
                 var mark = (this.list[x].completed === true) ? "(x) " : "( ) ";
                 var loopTask = document.createElement("li");
                 loopTask.innerText = mark + this.list[x].task;
+                loopTask.appendChild(this.createDelButton(x));
                 taskHolder.insertBefore(loopTask, taskHolder.childNodes[0]);
             }
         }
@@ -56,11 +57,9 @@ var td_obj = {
     },
 
         // Will delete: Element (task, completed) from Data Base
-    deleteTD: function(){
-        var a = document.getElementById("bye-inp").valueAsNumber;
+    deleteTD: function(a){
         this.list.splice(a, 1);
         this.displayTD();
-        document.getElementById("bye-inp").value = "";
     },
 
         // Will change the current status of "completed" the the oposite: true or false
@@ -82,8 +81,17 @@ var td_obj = {
         // Create Delete Buttons
     createDelButton: function(x){
         var delBu = document.createElement("button");
-        delBu.texContent = "Delete";
-        delBu.id = "x";
+        delBu.innerHTML = "Delete";
+        delBu.className = "li-del";
+        delBu.id = x;
         return delBu;
     }
 };
+
+    // single Event Listener for all Items in the lis using: "Event Delegation"
+var task_ul = document.getElementById("task-ul");
+task_ul.addEventListener("click", function(event1){
+    var buton2del = event1.target.id;
+    console.log(buton2del);
+    td_obj.deleteTD(buton2del);
+});

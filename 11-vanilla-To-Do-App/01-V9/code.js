@@ -77,13 +77,5 @@ var td_obj = {
         if(status === false){for(var x = 0; x < this.list.length; x++){ this.list[x].completed = true;}}
         if(status === true ){for(var y = 0; y < this.list.length; y++){ this.list[y].completed = false;}}
         this.displayTD();
-    },
-
-        // Create Delete Buttons
-    createDelButton: function(x){
-        var delBu = document.createElement("button");
-        delBu.texContent = "Delete";
-        delBu.id = "x";
-        return delBu;
     }
 };
