@@ -1,0 +1,29 @@
+<!--JavaScript Lesson
+
+-->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JavaScript DOM Tutorial</title>
+<style>
+a[href*="JSAJAX"] {
+	color: red;
+}
+</style>
+</head>
+<body>
+<h1 id="header">Welcome to My Website</h1>
+<p><span class="second">A</span> This is my website which <span class="first">can</span> change!</p>
+<p><span class="second">B</span> Are you going to see what <a href="http://www.google.com?s=JSAJAX">Everything</a> happens when the word <span class="first">can</span> changes?</p>
+<p><span class="second">C</span> Elements can <a href="http://www.google.com?s=JS">Just JS</a> change and you <span class="first">can</span> select them by Class, ID and other methods.</p>
+<div class="first"><span class="second">D</span> This is a Div with the class that is the same as the spans</div>
+<script>
+var myValues = document.querySelectorAll("a[href*=\"JS\"]");
+ for (var i = 0; i < myValues.length; i++) {
+                console.log(myValues[i].innerHTML);
+				 myValues[i].href = "http://www.google.com?s=CHANGED";
+}
+</script>
+</body>
+</html>

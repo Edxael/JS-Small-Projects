@@ -1,0 +1,44 @@
+<!--JavaScript Lesson
+
+-->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JavaScript DOM Tutorial</title>
+<style>
+.first div {
+	color: red;
+}
+</style>
+</head>
+<body>
+<h1 id="header">Welcome to My Website</h1>
+<p>This is my website which <span class="first">can</span> change!</p>
+<p>Are you going to see what happens when the word <span class="first">can</span> changes?</p>
+<p>Elements can change and you <span class="first">can</span> select them by Class, ID and other methods.</p>
+<div >Elements can change and you <span class="first">can</span> select them by Class, ID and other methods.</div>
+<div class="first">
+  <div>This is a Div with the class that is the same as the spans</div>
+</div>
+<div >
+  <div>This is a Div without the class that is the same as the spans</div>
+</div>
+<script>
+/*
+*********
+Challenge
+*********
+Change innerHTML of the last div with a class of first
+
+*/
+var myFirsts = document.querySelectorAll(".first div");  /// css selector
+console.log(myFirsts);
+ for (var i = 0; i < myFirsts.length; i++) {
+                console.log(myFirsts[i]);
+				myFirsts[i].innerHTML = '<B>' +(i+1) + '. has a class first</B>';
+
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!--JavaScript Lesson
+Assignment: Insert JavaScript code into the page
+-->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JavaScript Page</title>
+</head>
+<body>
+<p id="idOne"></p>
+<p id="idTwo"></p>
+<p id="idThree"></p>
+<script>
+console.log('hello');
+var x = '<B>Hello</B><BR><B>World</B>';
+document.getElementById("idOne").innerHTML = '<B>Hello</B><BR><B>World</B>';
+document.getElementById("idTwo").innerHTML = x;
+document.getElementById("idThree").textContent = x;
+</script>
+</body>
+</html>
