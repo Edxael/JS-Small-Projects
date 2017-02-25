@@ -1,30 +1,28 @@
-console.log("Hello 1");
-console.log("");
+// console.log("Hello 3");
+// console.log("");
 
-var task = "lanudry";
-var x = 0;
-var upTask = "water plants";
-var a = 1, b = 1;
 
-var td_obj = {
-    list: ["clean", "cook"],
-    displayTD: function(){console.log(this.list);},
-    addTD: function(){this.list.push(task);},
-    changeTD: function(x, upTask){this.list[x] = upTask;},
-    deleteTD: function(a, b){ this.list.splice(a, b);}
-};
+function message_to_display(help) {
+  document.getElementById('tips').innerHTML = help;
+}
 
-td_obj.displayTD();
-console.log("");
+function show_help_on_tip() {
+  var helpText = [
+      {'id': 'email', 'help': 'Your e-mail address'},
+      {'id': 'name', 'help': 'Your full name'},
+      {'id': 'age', 'help': 'Your age (you must be over 16)'}
+    ];
 
-td_obj.addTD(task);
-td_obj.displayTD();
-console.log("");
 
-td_obj.changeTD(x, upTask);
-td_obj.displayTD();
-console.log("");
+  for (var i = 0; i < helpText.length; i++) {
+    (function() {
+       var selectedBox = helpText[i];
+       document.getElementById(selectedBox.id).onfocus = function() {
+         message_to_display(selectedBox.help);
+       }
+   })(); // Immediate event listener attachment with the current value of selectedBox (preserved until iteration).
+  }
 
-td_obj.deleteTD(a, b);
-td_obj.displayTD();
-console.log("");
+}
+
+show_help_on_tip();

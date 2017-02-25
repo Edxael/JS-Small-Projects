@@ -7,9 +7,9 @@ var td_obj = {
 
         // Data Base, with all task and completion status
     list: [
-        {task:"Morning Exersice", completed: false},
-        {task:"CodeWars - GitHub", completed: true},
-        {task:"Eat BreakFast", completed: false},
+        {task:"Morning Exersice", completed: true},
+        // {task:"CodeWars - GitHub", completed: true},
+        // {task:"Eat BreakFast", completed: false},
         {task:"Turn On Computer", completed: false}
     ],
 
@@ -31,9 +31,12 @@ var td_obj = {
         else{
             for(var x = 0; x < this.list.length; x++){
                 // var mark = (this.list[x].completed === true) ? "(x) " : "( ) ";
-                var check = (this.list[x].completed === true) ? true : false;
+                // var check = (this.list[x].completed === true) ? true : false;
+                var check = this.list[x].completed ;
+
                 var loopTask = document.createElement("div");
                 loopTask.className = "gral-div-task";
+                loopTask.className+= check? " finished" : "";
 
 
                 // loopTask.innerText = mark + this.list[x].task;
@@ -106,7 +109,7 @@ var td_obj = {
 
     createRad: function(check, x){
         var radBu = document.createElement("input");
-        radBu.type = "radio";
+        radBu.type = "checkbox";
         console.log("Check: " + check);
         radBu.checked = check;
         radBu.className = "gral-rad";
