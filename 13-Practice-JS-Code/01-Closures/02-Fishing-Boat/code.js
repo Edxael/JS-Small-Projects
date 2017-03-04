@@ -2,11 +2,11 @@
 
 // Closures
 
-function check(MrgDive, dive){
-    var oxigenTanks = 5;
+function check(MorningDive, dive){
+    var oxigenTanks = 20;
     return function(){
-        var total = mrgDive;
-        mrgDive += dive;
+        var total = MorningDive;
+        MorningDive += dive;
         oxigenTanks -= 1;
         return total;
     }
