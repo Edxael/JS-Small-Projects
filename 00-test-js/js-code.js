@@ -1,28 +1,23 @@
-// console.log("Hello 3");
-// console.log("");
+$(document).ready( function() {
+    $('#myCarousel').carousel({
+    	interval:   4000
+	});
 
-
-function message_to_display(help) {
-  document.getElementById('tips').innerHTML = help;
-}
-
-function show_help_on_tip() {
-  var helpText = [
-      {'id': 'email', 'help': 'Your e-mail address'},
-      {'id': 'name', 'help': 'Your full name'},
-      {'id': 'age', 'help': 'Your age (you must be over 16)'}
-    ];
-
-
-  for (var i = 0; i < helpText.length; i++) {
-    (function() {
-       var selectedBox = helpText[i];
-       document.getElementById(selectedBox.id).onfocus = function() {
-         message_to_display(selectedBox.help);
-       }
-   })(); // Immediate event listener attachment with the current value of selectedBox (preserved until iteration).
-  }
-
-}
-
-show_help_on_tip();
+	var clickEvent = false;
+	$('#myCarousel').on('click', '.nav a', function() {
+			clickEvent = true;
+			$('.nav li').removeClass('active');
+			$(this).parent().addClass('active');
+	}).on('slid.bs.carousel', function(e) {
+		if(!clickEvent) {
+			var count = $('.nav').children().length -1;
+			var current = $('.nav li.active');
+			current.removeClass('active').next().addClass('active');
+			var id = parseInt(current.data('slide-to'));
+			if(count == id) {
+				$('.nav li').first().addClass('active');
+			}
+		}
+		clickEvent = false;
+	});
+});
